@@ -101,7 +101,7 @@ DATABASES = {
         'NAME': 'dfj1d2b9rp4jh0',
         'USER': 'ieeibvczdqwtbb',
         'PASSWORD': '1a62f97379ed48829cf2dec9ea24bd9a8abf56556124f47f33f1497d946759a3',
-        'HOST': 'w3-django-project.cdxmgq9zqqlr.us-east-1.rds.amazonaws.com',
+        'HOST': 'ec2-3-232-218-211.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
