@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure--j*lt!78h8!pl6hp&v472rb_@=d$g$6320(emu8b+@j=tup3e3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://wuiz-13c3cee5ea8d.herokuapp.com/']
 
 
 # Application definition
@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 CSRF_COOKIE_SECURE = False
 
