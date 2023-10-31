@@ -87,16 +87,27 @@ WSGI_APPLICATION = 'wiz.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+# if 'DATABASE_URL' in os.environ:
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfj1d2b9rp4jh0',
+        'USER': 'ieeibvczdqwtbb',
+        'PASSWORD': '1a62f97379ed48829cf2dec9ea24bd9a8abf56556124f47f33f1497d946759a3',
+        'HOST': 'w3-django-project.cdxmgq9zqqlr.us-east-1.rds.amazonaws.com',
+        'PORT': '5432'
     }
 }
+    
+    
 
-if 'DATABASE_URL' in os.environ:
-    db_from_env = dj_database_url.config(conn_max_age=600)
-    DATABASES['default'].update(db_from_env)
 
 
 # Password validation
